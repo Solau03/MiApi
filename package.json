@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "node bdturso.js"
+    "start": "node ./Conexion_y_crud_bd_turso/bdturso.js"
   },
   "author": "Google LLC",
   "license": "Apache-2.0",
