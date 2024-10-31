@@ -1,4 +1,4 @@
-const link = "http://localhost:3000/productos";
+const link = "https://miapi.onrender.com/productos";
 fetch(link, {
   method: "GET"
 })
