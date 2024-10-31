@@ -1,5 +1,5 @@
 const isLocal = window.location.hostname === "localhost";
-const link = isLocal ? "http://localhost:3000/productos" : "https://miapi-1660.onrender.com/productos";
+const link = "https://miapi-1660.onrender.com/productos";
 fetch(link, {
   method: "GET"
 })
@@ -42,7 +42,7 @@ function sendForm() {
     };
 
     const method = editId ? "PATCH" : "POST"; // Utilizar PATCH si se edita, en caso contrario POST
-    const url = editId ? `http://localhost:3000/${editId}` : "http://localhost:3000/productos";
+    const url = editId ? `https://miapi-1660.onrender.com/${editId}` : "https://miapi-1660.onrender.com/productos";
 
     fetch(url, {
         method: method,
@@ -64,7 +64,7 @@ function sendForm() {
 }
 
 function deletePost(id) {
-    fetch(`http://localhost:3000/${id}`, {
+    fetch(`https://miapi-1660.onrender.com/productos/${id}`, {
         method: "DELETE"
     })
     .then(res => res.json())
@@ -75,7 +75,7 @@ function deletePost(id) {
 }
 
 function editar(id) {
-    fetch(`http://localhost:3000/${id}`, {
+    fetch(`https://miapi-1660.onrender.com/productos/${id}`, {
         method: "GET"
     })
     .then(response => response.json())
