@@ -1,4 +1,4 @@
-const link = "https://miapi.onrender.com/productos";
+const link = "https://miapii.onrender.com/";
 fetch(link, {
   method: "GET"
 })
@@ -41,7 +41,7 @@ function sendForm() {
     };
 
     const method = editId ? "PATCH" : "POST"; // Utilizar PATCH si se edita, en caso contrario POST
-    const url = editId ? `https://miapi.onrender.com/productos/${editId}` : "https://miapi.onrender.com/productos";
+    const url = editId ? `https://miapii.onrender.com/${editId}` : "https://miapii.onrender.com/productos";
 
     fetch(url, {
         method: method,
@@ -63,7 +63,7 @@ function sendForm() {
 }
 
 function deletePost(id) {
-    fetch(`https://miapi.onrender.com/productos/${id}`, {
+    fetch(`https://miapii.onrender.com/${id}`, {
         method: "DELETE"
     })
     .then(res => res.json())
@@ -74,7 +74,7 @@ function deletePost(id) {
 }
 
 function editar(id) {
-    fetch(`https://miapi.onrender.com/productos/${id}`, {
+    fetch(`https://miapii.onrender.com/${id}`, {
         method: "GET"
     })
     .then(response => response.json())
