@@ -1,4 +1,5 @@
-const link = "http://localhost:3000/productos";
+const isLocal = window.location.hostname === "localhost";
+const link = isLocal ? "http://localhost:3000/productos" : "https://miapi-1660.onrender.com/productos";
 fetch(link, {
   method: "GET"
 })
