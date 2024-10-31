@@ -6,7 +6,7 @@ const app = express();
 const port = parseInt(process.env.PORT) || 3000;
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({ origin: "http://127.0.0.1:5500" }))
 const TURSO_DATABASE_URL = "libsql://try-solau-03.turso.io";
 const TURSO_AUTH_TOKEN = "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3MzAxODgwNzcsImlkIjoiN2M5N2Y2ZGYtNGQ4My00YzM2LTg4ZWYtZjExZmI4OTBhNThlIn0.vvJksLhod3DLTFfhCsRpGwjCm6q4sPLdMypDIgnL49t7gyJqt_adSiI_5lPhApndJAdjnKEj3sqDpM_BmVc2CQ";
 
