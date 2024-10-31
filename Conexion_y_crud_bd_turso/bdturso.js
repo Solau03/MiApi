@@ -3,7 +3,7 @@ import { createClient } from "@libsql/client"
 import cors from "cors"
 
 const app = express();
-const port = parseInt(process.env.PORT) || 3000;
+const port = parseInt(process.env.PORT) || 4000;
 
 app.use(express.json());
 app.use(cors())
