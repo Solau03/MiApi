@@ -41,7 +41,7 @@ function sendForm() {
     };
 
     const method = editId ? "PATCH" : "POST"; // Utilizar PATCH si se edita, en caso contrario POST
-    const url = editId ? `http://localhost:3000/productos/${editId}` : "http://localhost:3000/productos";
+    const url = editId ? `https://miapi.onrender.com/productos/${editId}` : "https://miapi.onrender.com/productos";
 
     fetch(url, {
         method: method,
@@ -63,7 +63,7 @@ function sendForm() {
 }
 
 function deletePost(id) {
-    fetch(`http://localhost:3000/productos/${id}`, {
+    fetch(`https://miapi.onrender.com/productos/${id}`, {
         method: "DELETE"
     })
     .then(res => res.json())
@@ -74,7 +74,7 @@ function deletePost(id) {
 }
 
 function editar(id) {
-    fetch(`http://localhost:3000/productos/${id}`, {
+    fetch(`https://miapi.onrender.com/productos/${id}`, {
         method: "GET"
     })
     .then(response => response.json())
