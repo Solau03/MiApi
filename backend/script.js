@@ -1,4 +1,4 @@
-const isLocal = window.location.hostname === "localhost";
+
 const link = "https://miapi-1660.onrender.com/productos";
 fetch(link, {
   method: "GET"
