@@ -42,7 +42,7 @@ function sendForm() {
     };
 
     const method = editId ? "PATCH" : "POST"; // Utilizar PATCH si se edita, en caso contrario POST
-    const url = editId ? `https://miapi-1660.onrender.com/${editId}` : "https://miapi-1660.onrender.com/productos";
+    const url = editId ? `https://miapi-1660.onrender.com/productos/${editId}` : "https://miapi-1660.onrender.com/productos";
 
     fetch(url, {
         method: method,
